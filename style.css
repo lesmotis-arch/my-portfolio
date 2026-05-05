@@ -165,3 +165,18 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .cta {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .cta:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
