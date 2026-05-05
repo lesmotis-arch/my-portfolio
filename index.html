@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Обо мне</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <a href="#about">Обо мне</a>
+    <a href="#target">Цели</a>
+    <a href="#interests">Интересы</a>
+    <a href="#contacts">Контакты</a>
+</div>
+<div class="container">
+<h1>Олег — веб разработчик </h1>
+<p>Создаю простые и стильные сайты под ключ</p>
+<img src="me.jpg" alt="Картинка">
+<p class="photo-text">Это я</p>
+<div class="cards">
+<div class="about block hidden" id="about">
+<h3>Обо мне</h3>
+<p>Я начинающий веб-разработчик. Создаю простые, аккуратные сайты с современным дизайном.</p>
+<p>Готов сделать сайт под ваши задачи: визитка, лендинг или простой проект.</p>
+</div>
+<div class="target block hidden" id="target">
+<h3>Услуги</h3>
+<p>Создание лендингов</p>
+<p>Верстка сайтов по макету</p>
+<p>Редизайн простых сайтов</p>
+</div>
+<div class="interests block hidden" id="interests">
+<h3>Почему стоит выбрать меня?</h3>
+<p>Быстрое выполнение</p>
+<p>Аккуратный дизайн</p>
+<p>Всегда на связи</p>
+</div>
+<div class="contact block hidden" id="contacts">
+<p>Напишите мне, и я отвечу в ближайшее время</p>
+
+<form action="https://formspree.io/f/mojrdkql" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Ваш email" required>
+    <textarea name="message" placeholder="Ваше сообщение..." rows="4" required></textarea>
+    <button type="submit">Отправить</button>
+</form>
+
+</div>
+<div class="links">
+
+<a href="https://t.me/lesmotis" target="_blank" >Мой тг</a>
+<a href="https://vk.com/ilyakain" target="_blank" >Мой Вк</a>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
