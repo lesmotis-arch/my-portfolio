@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> Обо мне</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,41 +14,54 @@
     <a href="#contacts">Контакты</a>
 </div>
 <div class="container">
-<h1>Олег — веб разработчик </h1>
-<p>Создаю простые и стильные сайты под ключ</p>
+<h1>Создам сайт, который приведёт вам клиентов</h1>
+<p>Для мастеров услуг: маникюр, ремонт, фотографы</p>
 <img src="me.jpg" alt="Картинка">
-<a href="#contacts" class="cta">Написать мне</a>
+<div class="cta-wrapper">
+    <a href="#" class="cta-button">Написать мне</a>
+</div>
 <div class="cards">
 <div class="about block hidden" id="about">
 <h3>Обо мне</h3>
-<p>Я начинающий веб-разработчик. Создаю простые, аккуратные сайты с современным дизайном.</p>
+<p>Создаю простые и понятные сайты, которые помогают клиентам быстрее записаться</p>
 <p>Готов сделать сайт под ваши задачи: визитка, лендинг или простой проект.</p>
-<p>Всегда на связи и довожу работу до результатов.</p>
+<p>Всегда на связи и довожу  работу до результатов.</p>
 </div>
 <div class="target block hidden" id="target">
-<h3>Услуги</h3>
-<ul>
-    <li>✔ Лендинг (1 страница)</li>
-    <li>✔ Сайт-визитка</li>
-    <li>✔ Адаптация под телефон</li>
-    <li>✔ Быстрое выполнение</li>
-</ul>
+<div class="services">
+<h2>Услуги</h2>
+<div class="service-item">
+<span>🔥 Лендинг (1 страница)</span>
+</div>
+<div class="service-item">
+<span>💼 Сайт-визитка</span>
+</div>
+<div class="service-item">
+<span>📱 Адаптация под телефон</span>
+</div>
+<div class="service-item">
+<span>⚡ Быстрое выполнение</span>
+</div>
+</div>
 </div>
 <div class="interests block hidden" id="interests">
-<h3>Почему стоит выбрать меня?</h3>
-<p>Быстрое выполнение</p>
-<p>Аккуратный дизайн</p>
-<p>Всегда на связи</p>
-<p>Цена от 500 ₽</p>
+<h3>Почему со мной удобно работать</h3>
+<ul>
+  <li>Сделаю сайт за 1–3 дня</li>
+  <li>Объясню всё простым языком</li>
+  <li>Всегда на связи</li>
+  <li>Помогу увеличить количество клиентов</li>
+</ul>
 </div>
 <div class="contact block hidden" id="contacts">
-<p>Напишите мне, и я отвечу в ближайшее время</p>
+<p>Если хотите больше клиентов — напишите мне, отвечу и предложу вариант под вас</p>
 
 <form action="https://formspree.io/f/mojrdkql" method="POST">
     <input type="text" name="name" placeholder="Ваше имя" required>
     <input type="email" name="email" placeholder="Ваш email" required>
     <textarea name="message" placeholder="Ваше сообщение..." rows="4" required></textarea>
     <button type="submit">Отправить</button>
+    <p style="font-size:14px; color:gray;">Ответ обычно в течение часа</p>
 </form>
 
 </div>

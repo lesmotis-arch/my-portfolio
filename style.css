@@ -1,26 +1,25 @@
         body {
-            background-color: black;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             padding: 20px;
         }
         h1 {
-            color: red;
-            font-size: 40px;
+            color: darkred;
+            font-size: 36px;
             text-align: center;
+            background: linear-gradient(45deg, red, orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h1, h3, p, ul, img, a {
             margin-bottom: 15px;
         }
         p   {
             color: gray;
+            line-height: 1.6;
+            font-size: 15px;
         }
-        li {
-            color: gray;
-        }
-        ul {
-            list-style: square;
-            }
         img {
             display: block;
             margin: 10px auto;
@@ -45,23 +44,32 @@
             transform: scale(1.1);
         }
         .container {
-            max-width: 500px;
+            max-width: 1100px;
             margin: 0 auto;
-            background-color: #111;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
 
-            display: flex;
+            display: grid;
             flex-direction: column;
-            gap: 15px;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
         }
         .block {
             background-color: #222;
             padding: 15px;
             border: 1px solid #333;
             border-radius: 15px;
+            transition: all 0.3s ease;
         }
         .links {
             margin-bottom: 20px;
@@ -81,8 +89,8 @@
         .target { border-left: 3px solid green; }
         .interests { border-left: 3px solid blue; }
         .block:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
             transition: all 0.3s ease;
         }
         a:active {
@@ -167,16 +175,102 @@
         }
         .cta {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: red;
+            padding: 14px 25px;
+            background: linear-gradient(45deg, red, orange);
             color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
             margin-top: 10px;
             transition: 0.3s;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
         }
         .cta:hover {
             background-color: darkred;
             transform: scale(1.05);
+        }
+        .services {
+            background: #1e1e1e;
+            padding: 30px;
+         border-radius: 15px;
+            color: white;
+            max-width: 400px;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+       .services li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .services li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+        }
+        .interests ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .interests li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .interests li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border: 1px solid red;
+            box-shadow: 0 0 5px red;
+        }
+        .service-item {
+            background: #2a2a2a;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid red;
+            transition: 0.3s;
+            font-size: 15px;
+        }
+
+        .service-item:hover {
+            transform: translateX(5px);
+            background: #333;
+            box-shadow: 0 0 10px rgba(255,0,0,0.3);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: linear-gradient(90deg, #ff3c00, #ff8c00);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s;
+            max-width: 300px;
+            width: 100%;
+        }
+        .cta-wrapper {
+            display: flex;
+            justify-content: center;
+            grid-column: span 2;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 100, 0, 0.4);
         }
